@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+img.res {
+    display: none;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.divide {
+    height: 50px;
+    background: #0B1215;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 40px;
+}
+
+nav p {
+    user-select: none;
+    font-family: "Leckerli One", cursive;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul a:hover {
+    color: #545454;
+}
+
+section.page1 div {
+    background-color: #0B1215;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.page1 h1 {
+    color: #FFFFFF;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+section.page2 {
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+
+section.page2 div {
+    height: 1024px;
+}
+
+section.page2 div.text {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 40px;
+    justify-content: center;
+
+}
+
+section.page2 div.image {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 0 40px;
+}
+
+section.page2 h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section.page2 p, section.page2 ul li {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+section.page2 ul {
+    padding-left: 30px;
+}
+
+section.page3 {
+    display: grid;
+    grid-template-columns: 67% 33%;
+}
+
+section.page3 div {
+    height: 1024px;
+}
+
+section.page3 div.text {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 40px;
+    justify-content: center;
+}
+
+section.page3 div.image {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 0 40px;
+}
+
+section.page3 h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section.page3 p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section.page4 {
+    display: grid;
+    grid-template-columns: 33% 67%;
+}
+
+section.page4 div {
+    height: 1024px;
+}
+
+section.page4 div.text {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 40px;
+    justify-content: center;
+}
+
+section.page4 div.image {
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 0 40px;
+}
+
+section.page4 h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section.page4 p, section.page4 ul li {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+section.page4 ul {
+    padding-left: 30px;
+}
+
+section.page5 div {
+    background-color: #0B1215;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.page5 h2 {
+    color: #FFFFFF;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #000000;
+    padding: 40px;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.info {
+    font-size: 16px;
+    font-weight: 500;
+    color: #626262;
+    margin-top: 20px;
+}
+
+@media (max-width:940px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .divide {
+        height: 40px;
+    }
+    
+    section.page1 h1 {
+        font-size: 70px;
+    }
+
+    img.full {
+        display: none;
+    }
+
+    img.res {
+        display: block;
+    }
+
+    section.page2 div.image {
+        height: 340px;
+    }
+
+    section.page2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.page2 div.text {
+        justify-content: flex-start;
+        padding: 40px;
+    }
+
+    section.page3 div.image {
+        height: 340px;
+    }
+
+    section.page3 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section.page3 div.text {
+        justify-content: flex-start;
+        padding: 40px;
+    }
+
+    section.page4 div.image {
+        height: 340px;
+    }
+
+    section.page4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.page4 div.text {
+        justify-content: flex-start;
+        padding: 40px;
+    }
+
+    section.page5 h2 {
+        font-size: 70px;
+    }
+
+}
+
+@media (max-width:640px) {
+    nav {
+        font-size: 18px;
+    }
+
+    nav p {
+        font-size: 26px;
+    }
+
+    .divide {
+        height: 30px;
+    }
+
+    section.page1 h1 {
+        font-size: 68px;
+    }
+
+    section.page2 h2 {
+        font-size: 54px;
+    }
+    
+    section.page2 p, section.page2 ul li {
+        font-size: 18px;
+    }
+
+    section.page3 h2 {
+        font-size: 54px;
+    }
+    
+    section.page3 p, section.page3 ul li {
+        font-size: 18px;
+    }
+
+    section.page4 h2 {
+        font-size: 54px;
+    }
+    
+    section.page4 p, section.page4 ul li {
+        font-size: 18px;
+    }
+
+    section.page5 h2 {
+        font-size: 68px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+
+    p.info {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:540px) {
+    nav {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    nav p {
+        font-size: 24px;
+    }
+
+    section.page1 div {
+        height: 300px;
+    }
+
+    section.page1 h1 {
+        font-size: 56px;
+    }
+
+    section.page2 h2 {
+        font-size: 45px;
+    }
+
+   section.page2 div.image {
+        padding: 0 20px 0 20px;
+        height: 200px;
+    }
+
+    section.page2 div.text {
+        justify-content: flex-start;
+        padding: 20px;
+    }
+    
+    section.page2 p, section.page2 ul li {
+        font-size: 15px;
+    }
+
+    section.page3 h2 {
+        font-size: 48px;
+    }
+    
+    section.page3 div.image {
+        padding: 0 20px 0 20px;
+        height: 200px;
+    }
+
+    section.page3 div.text {
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    section.page3 p, section.page3 ul li {
+        font-size: 15px;
+    }
+
+    section.page4 h2 {
+        font-size: 45px;
+    }
+    
+    section.page4 div.image {
+        padding: 0 20px 0 20px;
+        height: 200px;
+    }
+
+    section.page4 div.text {
+        justify-content: flex-start;
+        padding: 20px;
+    }
+    
+    section.page4 p, section.page4 ul li {
+        font-size: 15px;
+    }
+
+    section.page5 div {
+        height: 300px;
+    }
+
+    section.page5 h2 {
+        font-size: 56px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    p.info {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:380px) {
+    nav {
+        font-size: 14px;
+    }
+
+    nav p {
+        font-size: 22px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    .divide {
+        height: 20px;
+    }
+
+    section.page1 div {
+        height: 256px;
+    }
+
+    section.page1 h1 {
+        font-size: 44px;
+    }
+    
+    section.page2 h2 {
+        font-size: 42px;
+    }
+
+    section.page2 ul {
+        padding-left: 15px;
+    }
+    
+    section.page2 p, section.page2 ul li {
+        font-size: 14px;
+    }
+
+    section.page3 h2 {
+        font-size: 42px;
+    }
+    
+    section.page3 p, section.page3 ul li {
+        font-size: 14px;
+    }
+
+    section.page4 h2 {
+        font-size: 42px;
+    }
+
+    section.page2 ul {
+        padding-left: 15px;
+    }
+    
+    section.page4 p, section.page4 ul li {
+        font-size: 14px;
+    }
+
+    section.page5 div {
+        height: 256px;
+    }
+
+    section.page5 h2 {
+        font-size: 44px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    p.info {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:326px) {
+    nav {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    nav p {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    section.page1 div {
+        height: 256px;
+    }
+
+    section.page1 h1 {
+        font-size: 32px;
+    }
+
+    section.page2 h2 {
+        font-size: 33px;
+    }
+
+    section.page2 div.text {
+        padding: 6px;
+    }
+
+    section.page2 div.image {
+        padding: 0 6px 0 6px;
+        height: 200px;
+    }
+
+    section.page2 ul {
+        padding-left: 8px;
+    }
+
+    section.page2 p, section.page2 ul li {
+        font-size: 11px;
+    }
+
+    section.page3 h2 {
+        font-size: 33px;
+    }
+
+    section.page3 div.text {
+        padding: 10px;
+    }
+    
+    section.page3 div.image {
+        padding: 0 10px 0 10px;
+        height: 200px;
+    }
+
+    section.page3 p, section.page3 ul li {
+        font-size: 11px;
+    }
+
+    section.page4 h2 {
+        font-size: 33px;
+    }
+
+    section.page4 div.text {
+        padding: 10px;
+    }
+
+    section.page4 div.image {
+        padding: 0 10px 0 10px;
+        height: 200px;
+    }
+
+    section.page4 ul {
+        padding-left: 8px;
+    }
+
+    section.page4 p, section.page4 ul li {
+        font-size: 11px;
+    }
+
+    section.page5 div {
+        height: 256px;
+    }
+
+    section.page5 h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+
+    p.info {
+        font-size: 9px;
+        margin-top: 10px;
+    }
+}
